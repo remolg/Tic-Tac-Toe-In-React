@@ -20,6 +20,12 @@ Clone the project
   git clone https://github.com/remolg/Tic-Tac-Toe-In-React.git
 ```
 
+Install modules
+
+```bash
+  cd npm i 
+```
+
 Go to the project directory and run
 
 ```bash
