@@ -18,6 +18,7 @@ export const TicTacToe = () => {
         const sign = count === 'x' ? cross_icon : circle_icon;
         e.target.innerHTML = `<img src="${sign}" />`;
         data[num] = count;
+        scoreless()
         checkWin(sign);
         setCount(count === 'x' ? 'o' : 'x');
     }
@@ -31,15 +32,24 @@ export const TicTacToe = () => {
 
         for (const condition of winConditions) {
             if (data[condition[0]] === data[condition[1]] && data[condition[1]] === data[condition[2]] && data[condition[2]] === count) {
-                win(sign);
+                titleRef.current.innerHTML = `Congratulations <img src="${sign}" /> Won!`;
                 setLock(true);
                 break;
             }
         }
     }
 
-    const win = (sign) => {
-        titleRef.current.innerHTML = `Congratulations <img src="${sign}" /> Won!`;
+    const scoreless = () => {
+        let say = 0;
+        data.forEach(a => {
+            if (a !== "") {
+                say++
+            }
+            if (say == 9) {
+                titleRef.current.innerHTML = `A <span>Draw</span>`;
+                setLock(true)
+            }
+        })
     }
 
     const reset = () => {
