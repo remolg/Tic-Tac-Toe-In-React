@@ -40,6 +40,12 @@ open the browser
   http://127.0.0.1:3000/
 ```
 
+## Or You Can Play Directly From This Link
+
+```bash
+  https://remolg-tic-tac-toe.netlify.app/
+```
+
 ## Screenshots
 
 
