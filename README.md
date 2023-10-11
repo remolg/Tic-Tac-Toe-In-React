@@ -42,9 +42,8 @@ open the browser
 
 ## Or You Can Play Directly From This Link
 
-```bash
-  https://remolg-tic-tac-toe.netlify.app/
-```
+[Tic Tac Toe](https://remolg-tic-tac-toe.netlify.app/)
+
 
 ## Screenshots
 
